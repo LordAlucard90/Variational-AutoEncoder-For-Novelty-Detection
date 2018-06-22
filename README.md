@@ -35,7 +35,7 @@ The threshold has been chosen from the ordered mean squared errors vector such t
 ### Reconstruction error by changing Dropout Values (R. Trick = 32, Regularization = 0.001)
 ![dropout](imgs/H32_R001.png)
 
-### Best Losses
+### Best Reconstruction Losses
 r. trick | reg. | dropout | loss  
 -------- | ---- | ------- | ----
 32 | 1e-05 | 0.1    | 144.07
@@ -44,7 +44,7 @@ r. trick | reg. | dropout | loss
 32 | 1e-05 |  None | 144.22
 32 | 0.001 | 0.1 | 144.50
 
-### Best Reconstruction Example
+### Best Reconstruction Example (R. Trick = 32, Regularization = 1e-05, Dropout = 0.1)
 ![best reconstruction](imgs/best_rec.png)
 
 ### Best F1-Scores
@@ -68,9 +68,9 @@ gamma |  Precision | recall | f1-score
 
 # Contents
 ```
-helper/       : helperto recreate the experiment
+helper/       : helper to recreate the experiment
 imgs/         : images for this README
-saved/        : best model weights
+saved/        : best F1-score model weights
 experiment.py : example to recreate experiment
 indices.npy   : my indices 
 results.npy   : my results
