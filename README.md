@@ -68,11 +68,12 @@ gamma |  Precision | recall | f1-score
 
 # Contents
 ```
-helper/     : helperto recreate the experiment
-imgs/       : images for this README
-saved/      : best model weights
-indices.npy : my indices 
-results.npy : my results
+helper/       : helperto recreate the experiment
+imgs/         : images for this README
+saved/        : best model weights
+experiment.py : example to recreate experiment
+indices.npy   : my indices 
+results.npy   : my results
 ```
 
 # Tools
