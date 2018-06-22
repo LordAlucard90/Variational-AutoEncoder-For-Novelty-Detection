@@ -20,7 +20,7 @@ Has been trained different autoencoders changing :
 - L2 regularization values for convolutional and dense layers
 - dropout values for dropout layers (see model.py)
 
-The threshold has been chosen from the ordered mean squared errors vector such that there are about 3% elements greater than the threshold.
+The threshold has been chosen (in the Train set) from the ordered mean squared errors vector such that there are about 3% elements greater than the threshold.
 
 ### Model
 ![model](imgs/vae.png)
