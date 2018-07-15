@@ -20,6 +20,8 @@ if __name__ == "__main__":
     helper.get_best_recall()
     helper.get_best_f1()
 
+    print(f"Best Model Threshold is: {helper.get_th(vae=True, hidden=32, reg_val=1e-5, drp_val=0.5)}")
+
     helper.get_best_svmoc()
 
 

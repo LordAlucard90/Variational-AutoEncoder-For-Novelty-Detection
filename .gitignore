@@ -69,3 +69,4 @@ venv.bak/
 .idea/*
 emnist-letters/*
 bests_tmp/*
+gzip.zip

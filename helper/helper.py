@@ -251,3 +251,11 @@ class Helper:
         plt.clf()
         plt.cla()
         plt.close()
+
+    def get_th(self, vae=True, hidden=2, reg_val=None, drp_val=None):
+        if not exists(self.results):
+            self.make_tests()
+        res = np.load(self.results)
+        name = ModelGenerator(vae=vae, hidden=hidden, reg_val=reg_val, drp_val=drp_val).get_name()
+        return res[list(res[:, 0]).index(name)][2]
+
